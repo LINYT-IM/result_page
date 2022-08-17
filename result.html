@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Result</title>
+  </head>
+  <body>
+    <div
+      class="ui raised very padded text segment"
+      style="
+        width: 100vw;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      "
+      id="main"
+    >
+      <div class="ui card" style="width: 40%; margin-right: 100px">
+        <div class="content">
+          <div class="header">Problem Result</div>
+          <!-- <div class="meta">2 days ago</div> -->
+          <div class="description">
+            <table class="tb-Knapsack ui celled table"></table>
+          </div>
+          <div class="ui button Knapsack">清除資料</div>
+        </div>
+      </div>
+      <!-- <div class="ui card" style="width: 40%">
+        <div class="content">
+          <div class="header">TSP Problem Result</div>
+          <!-- <div class="meta">2 days ago</div> 
+          <div class="description">
+            <table class="tb-TSP ui celled table"></table>
+          </div>
+          <div class="ui button TSP">清除資料</div>
+        </div>
+      </div> -->
+    </div>
+  </body>
+  <script src="./results.js"></script>
+  <style>
+    #main.ui.text.container.segment {
+      max-width: 100vw;
+    }
+  </style>
+</html>
